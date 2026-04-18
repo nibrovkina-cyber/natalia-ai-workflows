@@ -8,8 +8,9 @@ Free AI agents for small business. Built with Claude Code. Each agent solves one
 
 | Agent | What pain it solves | Who it's for | Time saved |
 |---|---|---|---|
+| [MAX/VK Bot Migration](max-vk-bot-migration/) | Telegram blocked, your business bot stopped working | Any Russian business that ran on Telegram | 1 evening to migrate |
+| [Marketplace AI Manager](marketplace-ai-manager/) | Reviews, competitors, inventory, analytics, questions, daily briefing | WB/Ozon sellers with 200+ orders/day | 4-5 hours/day |
 | [Bankruptcy Deal Finder](bankruptcy-deal-finder/) | Scanning 1000s of auction lots daily for undervalued assets | Investors, flippers, anyone buying at bankruptcy auctions | 2-4 hours/day |
-| [WB Review Responder](wb-review-responder/) | Answering 100+ negative marketplace reviews manually | WB/Ozon sellers with 200+ reviews/month | 2-3 hours/day |
 | [AI Business Assistant](ai-business-assistant/) | Morning routine: email triage, calendar prep, task priorities | Solo founders, small teams | 1-2 hours/day |
 
 Each agent includes: setup guide, working code, example outputs, edge cases, privacy notes.
