@@ -1,0 +1,14 @@
+{
+  "name": "max-vk-bot-migration",
+  "version": "1.0.0",
+  "description": "Business bot template for MAX and VK. Migrate from Telegram in one evening.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "dev": "node --watch bot.js"
+  },
+  "dependencies": {
+    "@maxhub/max-bot-api": "^1.0.0",
+    "dotenv": "^16.0.0"
+  }
+}
