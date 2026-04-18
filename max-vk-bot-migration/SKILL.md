@@ -190,6 +190,6 @@ If you have an existing Telegram bot, here's what changes:
 
 ---
 
-**Made by [Natalia Brovkina](https://t.me/FinanceNatasha)** — former Big 4 finance, now building AI agents for small business.
+**Made by [Natalia Brovkina](https://t.me/FinanceNatasha)** - former Big 4 finance, now building AI agents for small business.
 
-**Video tutorial:** [YouTube link — coming soon]
+**Video tutorial:** [YouTube link - coming soon]

@@ -1,6 +1,6 @@
 ---
 name: marketplace-ai-manager
-description: Full AI operations manager for WB/Ozon sellers — reviews, competitor monitoring, analytics, inventory alerts, daily briefing, question answering. Replaces a 40K rub/month assistant.
+description: Full AI operations manager for WB/Ozon sellers - reviews, competitor monitoring, analytics, inventory alerts, daily briefing, question answering. Replaces a 40K rub/month assistant.
 version: 2.0.0
 author: Natalia Brovkina (@NataliyaBrovk)
 ---
@@ -144,9 +144,9 @@ REVIEWS:
   LEGAL/SAFETY routed to you: 0
 
 TOP ISSUES FROM REVIEWS:
-  1. "Delivery slow" — 4 mentions (logistics, not product)
-  2. "Size runs small" — 2 mentions (consider updating size chart)
-  3. "Color different from photo" — 1 mention
+  1. "Delivery slow" - 4 mentions (logistics, not product)
+  2. "Size runs small" - 2 mentions (consider updating size chart)
+  3. "Color different from photo" - 1 mention
 
 INVENTORY ALERTS:
   SKU 12345 (Blue T-shirt XL): 23 units left, selling 8/day = 3 days supply. RESTOCK NOW.
@@ -210,4 +210,4 @@ Full lists in `trigger-words/ru.txt` and `trigger-words/en.txt`.
 
 ---
 
-**Made by [Natalia Brovkina](https://t.me/FinanceNatasha)** — former Big 4 finance, now building AI agents for small business.
+**Made by [Natalia Brovkina](https://t.me/FinanceNatasha)** - former Big 4 finance, now building AI agents for small business.

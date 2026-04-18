@@ -105,7 +105,7 @@ crontab -e
 ## Example output (Telegram alert)
 
 ```
-🏠 Top 5 deals — April 18, 2026
+🏠 Top 5 deals - April 18, 2026
 
 1. Apartment, Krasnogorsk, 54 sqm
    Starting price: 3,200,000 rub
@@ -170,4 +170,4 @@ Tracked lots update:
 
 ---
 
-**Made by [Natalia Brovkina](https://t.me/FinanceNatasha)** — former Big 4 finance, now building AI agents for small business.
+**Made by [Natalia Brovkina](https://t.me/FinanceNatasha)** - former Big 4 finance, now building AI agents for small business.
