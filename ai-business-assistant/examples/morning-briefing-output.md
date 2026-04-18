@@ -29,9 +29,16 @@ Personal. Blocked.
 - Shipping notification from vendor. No reply needed, logged.
 
 **Needs you (3):**
-- Client asking about pricing for a 3-agent package. Draft ready for your review. They're comparing with a competitor who quoted 50K rub. Our edge: we include 30 days of async support.
-- Partner proposal from an n8n consulting firm. Complex, read yourself. 2 pages, mostly about revenue share on referrals.
-- Tax accountant asking about a specific March expense (34,500 rub to "Cloud Services"). She needs the invoice. Check if it's the n8n hosting or the API credits.
+
+- **Client asking about pricing** (from: Dmitry, WB seller). They're comparing with a competitor who quoted 50K rub.
+  Draft reply:
+  > Hi Dmitry, the review responder setup is 30,000 rub one-time. That covers configuration, voice tuning, testing on 50 real reviews, and 30 days of async support. The difference from a 50K quote is usually scope. Most agencies bundle dashboards and analytics you don't need yet. We start with the one process that saves the most hours, make sure it works, then add from there. Happy to walk through specifics on a call. When works?
+
+- **Partner proposal** from an n8n consulting firm. Complex, read yourself. 2 pages, mostly about revenue share on referrals. No draft, flagged for manual review.
+
+- **Tax accountant** asking about a March expense (34,500 rub to "Cloud Services"). She needs the invoice.
+  Draft reply:
+  > Hi Elena, the 34,500 rub charge is split: 12,000 for n8n cloud hosting (annual plan, prorated) and 22,500 for Anthropic API credits (Claude, used for client review responders). I'll send both invoices by end of day. The n8n one is under "Software subscriptions", the API one under "Cloud services". Let me know if you need them categorized differently for the quarterly filing.
 
 **Spam/irrelevant (2):** filtered, no action.
 

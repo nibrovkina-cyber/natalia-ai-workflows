@@ -210,4 +210,4 @@ Full lists in `trigger-words/ru.txt` and `trigger-words/en.txt`.
 
 ---
 
-**Made by [Natalia Brovkina](https://t.me/FinanceNatasha)** - former Big 4 finance, now building AI agents for small business.
+**[Natalia Brovkina](https://t.me/FinanceNatasha)** - AI Change Manager. Former Big 4 and Big Tech finance.

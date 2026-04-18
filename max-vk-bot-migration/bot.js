@@ -13,6 +13,12 @@ const fs = require('fs');
 const path = require('path');
 require('dotenv').config({ path: 'config.env' });
 
+// Validate required env vars
+if (!process.env.BOT_TOKEN) {
+    console.error('ERROR: BOT_TOKEN not set. Get it from business.max.ru > Чат-боты > Интеграция > Получить токен');
+    process.exit(1);
+}
+
 const bot = new Bot(process.env.BOT_TOKEN);
 
 // Load FAQ
@@ -168,10 +174,14 @@ bot.on('message_created', async (ctx) => {
 
         // Notify admin
         if (ADMIN_CHAT_ID) {
-            await bot.api.sendMessageToChat(
-                parseInt(ADMIN_CHAT_ID),
-                `Новая запись!\nКлиент: ${booking.user_name}\nДата: ${booking.date}\nВремя: ${booking.time}\nТелефон: ${booking.phone}`
-            );
+            try {
+                await bot.api.sendMessageToChat(
+                    parseInt(ADMIN_CHAT_ID),
+                    `Новая запись!\nКлиент: ${booking.user_name}\nДата: ${booking.date}\nВремя: ${booking.time}\nТелефон: ${booking.phone}`
+                );
+            } catch (err) {
+                console.error('Failed to notify admin about booking:', err.message);
+            }
         }
 
         return ctx.reply(
@@ -192,10 +202,14 @@ bot.on('message_created', async (ctx) => {
 
         // Notify admin
         if (ADMIN_CHAT_ID) {
-            await bot.api.sendMessageToChat(
-                parseInt(ADMIN_CHAT_ID),
-                `Новый вопрос!\nОт: ${lead.user_name}\nВопрос: ${lead.question}`
-            );
+            try {
+                await bot.api.sendMessageToChat(
+                    parseInt(ADMIN_CHAT_ID),
+                    `Новый вопрос!\nОт: ${lead.user_name}\nВопрос: ${lead.question}`
+                );
+            } catch (err) {
+                console.error('Failed to notify admin about question:', err.message);
+            }
         }
 
         return ctx.reply(

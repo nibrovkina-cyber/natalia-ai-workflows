@@ -1,6 +1,6 @@
 I was a finance person before this. For seven years I watched small companies spend money on people doing the same 15 tasks every morning. Email triage. Meeting prep. Reviewing marketplace feedback. Invoice sorting.
 
-Now I build AI agents that do those tasks. I'm giving four of them away here, the same three I use for my own business every morning.
+Now I build AI agents that do those tasks. I'm giving four of them away here, the same ones I use for my own business every morning.
 
 If you're a solo founder or run a small team, clone and try. If you're a 500-person company, this isn't for you (yet).
 

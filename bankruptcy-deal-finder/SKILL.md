@@ -1,6 +1,6 @@
 ---
 name: bankruptcy-deal-finder
-description: AI agent that monitors bankruptcy auction sites (torgi.gov.ru, bankrot.fedresurs.ru), finds undervalued assets, calculates discount to market price, and alerts via Telegram
+description: AI agent that monitors torgi.gov.ru for bankruptcy auction deals, finds undervalued assets, calculates discount to market price, and alerts via Telegram
 version: 1.0.0
 author: Natalia Brovkina (@NataliyaBrovk)
 ---
@@ -11,13 +11,13 @@ AI agent that scans Russian bankruptcy auction platforms daily, finds assets sel
 
 ## What problem this solves
 
-Thousands of lots appear on torgi.gov.ru and bankrot.fedresurs.ru every day. Apartments, commercial real estate, vehicles, equipment. Many sell at 30-60% below market price. But finding the good deals manually takes 2-4 hours of scrolling, comparing, and calculating.
+Thousands of lots appear on torgi.gov.ru every day. Apartments, commercial real estate, vehicles, equipment. Many sell at 30-60% below market price. But finding the good deals manually takes 2-4 hours of scrolling, comparing, and calculating.
 
 This agent does it in 5 minutes every morning.
 
 ## What it does
 
-1. **Scans** torgi.gov.ru and bankrot.fedresurs.ru for new lots matching your criteria (region, asset type, price range)
+1. **Scans** torgi.gov.ru for new lots matching your criteria (region, asset type, price range)
 2. **Filters** by your parameters: only apartments in Moscow, only commercial real estate in SPb, only vehicles under 2M rub
 3. **Estimates market price** by comparing with Cian, Avito, or DomClick listings in the same area
 4. **Calculates discount**: lot price vs estimated market price
@@ -32,7 +32,6 @@ Daily at 8:00 AM (cron):
   
   scraper.py
     ├── GET torgi.gov.ru/new/public/lots/reg (filtered by criteria)
-    ├── GET bankrot.fedresurs.ru (filtered by criteria)
     └── Parse: lot_id, title, location, price, deadline, asset_type
   
   analyzer.py (Claude API)
@@ -52,7 +51,7 @@ Daily at 8:00 AM (cron):
 | Source | URL | What it has | Access |
 |---|---|---|---|
 | torgi.gov.ru | torgi.gov.ru/new/public/lots/reg | All government auctions: real estate, land, vehicles, equipment | Public, no auth needed |
-| bankrot.fedresurs.ru | bankrot.fedresurs.ru | Bankruptcy-specific lots, debtor info, court decisions | Public, parser-api.com has API ($) |
+| bankrot.fedresurs.ru | bankrot.fedresurs.ru | Bankruptcy-specific lots, debtor info, court decisions | Public, parser-api.com has API ($). Not implemented in v1, planned for v2 |
 | Cian (for price comparison) | cian.ru | Apartment/commercial real estate market prices | Public listings |
 | Avito (for price comparison) | avito.ru | Vehicles, equipment market prices | Public listings |
 
@@ -63,7 +62,7 @@ Daily at 8:00 AM (cron):
 - Python 3.10+
 - Claude API key (for market price analysis)
 - Telegram bot token (from @BotFather)
-- (Optional) parser-api.com account for bankrot.fedresurs.ru structured data
+- (Optional, v2) parser-api.com account for bankrot.fedresurs.ru (not yet implemented)
 
 ### Configuration
 
@@ -151,13 +150,13 @@ Tracked lots update:
 - Doesn't bid on auctions for you. Analysis only.
 - Doesn't verify legal status of the lot (encumbrances, liens). You need a lawyer for that.
 - Doesn't guarantee market price estimates are accurate. They're based on comparable listings, not appraisals.
-- Doesn't work for non-Russian auction platforms (yet). torgi.gov.ru and fedresurs only.
+- Doesn't work for non-Russian auction platforms. Currently torgi.gov.ru only. bankrot.fedresurs.ru planned for v2.
 - Doesn't handle auctions requiring special permits (military property, cultural heritage sites).
 
 ## Cost
 
 - Claude API: ~$0.01-0.05 per daily scan (depends on lot count)
-- parser-api.com (optional): from 1,500 rub/month for fedresurs data
+- parser-api.com (v2, not yet): from 1,500 rub/month for fedresurs data
 - Telegram bot: free
 - Total: ~$3-10/month
 
@@ -170,4 +169,4 @@ Tracked lots update:
 
 ---
 
-**Made by [Natalia Brovkina](https://t.me/FinanceNatasha)** - former Big 4 finance, now building AI agents for small business.
+**[Natalia Brovkina](https://t.me/FinanceNatasha)** - AI Change Manager. Former Big 4 and Big Tech finance.

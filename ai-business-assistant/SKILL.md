@@ -1,6 +1,6 @@
 ---
 name: ai-business-assistant
-description: Daily AI assistant for entrepreneurs — morning briefing, task prioritization, email drafts, meeting prep, expense tracking, weekly review
+description: Daily AI assistant for entrepreneurs - morning briefing, task prioritization, email drafts, meeting prep, expense tracking, weekly review
 version: 1.0.0
 author: Natalia Brovkina (@NataliyaBrovk)
 ---
@@ -11,14 +11,14 @@ Your daily AI co-pilot that handles the morning routine you hate.
 
 **The problem:** You spend 1-2 hours every morning on emails, calendar, task sorting, and prep before you do any actual work.
 
-**The solution:** One command. Your AI assistant reads your inbox, calendar, and task list — gives you a 2-minute briefing and handles the rest.
+**The solution:** One command. Your AI assistant reads your inbox, calendar, and task list - gives you a 2-minute briefing and handles the rest.
 
 ## What it does
 
 ### Morning Briefing (daily, 2 min read)
-- Scans today's calendar — flags conflicts, prep needed
-- Reads unread emails — drafts replies for routine ones
-- Checks task list — suggests top 3 priorities based on deadlines and impact
+- Scans today's calendar - flags conflicts, prep needed
+- Reads unread emails - drafts replies for routine ones
+- Checks task list - suggests top 3 priorities based on deadlines and impact
 - Summarizes yesterday's metrics (revenue, orders, support tickets)
 
 ### Email Drafts
@@ -70,17 +70,17 @@ Your daily AI co-pilot that handles the morning routine you hate.
 Good morning. Thursday April 18.
 
 CALENDAR (3 events):
-- 10:00 Team standup (15 min) — no prep needed
-- 14:00 Client call: Maria, WB seller, 150 orders/day — PREP BELOW
-- 16:30 Dentist — personal, blocked
+- 10:00 Team standup (15 min) - no prep needed
+- 14:00 Client call: Maria, WB seller, 150 orders/day - PREP BELOW
+- 16:30 Dentist - personal, blocked
 
 EMAILS (7 unread, 3 need you):
 - [AUTO-REPLY DRAFTED] Supplier invoice confirmation
 - [AUTO-REPLY DRAFTED] Meeting reschedule request  
 - [AUTO-REPLY DRAFTED] Newsletter subscription
-- [NEEDS YOU] Client asking about pricing — draft ready for review
-- [NEEDS YOU] Partner proposal — complex, read yourself
-- [NEEDS YOU] Tax accountant question — forwarded context
+- [NEEDS YOU] Client asking about pricing - draft ready for review
+- [NEEDS YOU] Partner proposal - complex, read yourself
+- [NEEDS YOU] Tax accountant question - forwarded context
 
 TOP 3 TODAY:
 1. Finish client proposal (deadline tomorrow, 2 hours)
@@ -108,4 +108,4 @@ METRICS:
 
 ---
 
-**Made by [Natalia Brovkina](https://t.me/FinanceNatasha)** — AI Change Manager. Former Big 4 & Big Tech finance. Now building AI agents for small business between feedings and LEGO.
+**[Natalia Brovkina](https://t.me/FinanceNatasha)** - AI Change Manager. Former Big 4 and Big Tech finance. Building AI agents for small business.
