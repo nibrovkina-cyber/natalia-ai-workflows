@@ -1,7 +1,7 @@
 {
-  "name": "max-vk-bot-migration",
+  "name": "max-bot-migration",
   "version": "1.0.0",
-  "description": "Business bot template for MAX and VK. Migrate from Telegram in one evening.",
+  "description": "Business bot template for MAX messenger. Migrate from Telegram in one evening.",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js",
