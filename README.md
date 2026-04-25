@@ -17,6 +17,12 @@ Each agent includes: setup guide, working code, example outputs, edge cases, pri
 
 ---
 
+## 📺 Video walkthroughs
+
+- [Перенос Telegram-бота в MAX за вечер](https://youtu.be/se69F0K21J0) (RU, 2026-04-25) — pairs with [max-bot-migration/](max-bot-migration/). 5 шагов, deploy на Railway 90 сек, ChatGPT-prompt для любой ниши.
+
+---
+
 ## How to use
 
 ```bash
@@ -56,9 +62,8 @@ I use these agents for my own business every day. Giving them away because watch
 
 If you run a small business and want help setting these up:
 
-- Telegram: [@FinanceNatasha](https://t.me/FinanceNatasha)
+- Telegram: [@natashabrovkina](https://t.me/natashabrovkina)
 - YouTube: [@nataliyabrovk](https://youtube.com/@nataliyabrovk)
-- Twitter: [@NataliyaBrovk](https://twitter.com/NataliyaBrovk)
 
 I run free 30-min audits where I look at your processes and find 3 to automate. No pitch, just the analysis.
 
